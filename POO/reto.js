@@ -80,7 +80,7 @@ console.log(manuel.calEdad(2023));
 
 class Contacts {
     constructor(){
-        this.arrObject = ;
+        //this.arrObject = ; Tengo que finalizar el constructor del obj
     }
     //metodos
 
