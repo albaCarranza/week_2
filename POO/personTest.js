@@ -2,6 +2,7 @@
 // • Crear un objeto de la clase Persona y probar todos sus atributos y métodos.
 // • Sube todos los cambios a tu rama “dia1”
 
-let myLib = require("./reto.js");
+// let myLib = require("./person")
+let Juan = new myLib.Person("Juan", "Gallardo", 1994, 70, 1.80, ["correr", "dormir", "dibujar"])
 
-console.log(myLib.Person);
+// console.log(Juan);

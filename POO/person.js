@@ -23,15 +23,18 @@ class Person {
         return curretYear - this.anyoNacimiento
     }
     printAll(){
-        return `${this.nombre}${"-"}${this.apellido}${"-"}${this.peso}${"-"}${this.altura}${"-"}${this.anyoNacimiento}${"-"}${this.edad}`
+        return `nombre : ${this.nombre},${"\n"}apellido : ${this.apellido},${"\n"}anyoNacimiento : ${this.anyoNacimiento},${"\n"}weight : ${this.peso},${"\n"}height : ${this.altura},${"\n"}hobbies : ${this.hobbies}`
     }
     printHobbies(){
         return []
     }
 }
-let manuel = new Person("Manuel", "Gallardo", 1996, 80, 190, ["comer", "dormir", "dibujar"])
-console.log(manuel);
+let manuel = new Person("Manuel", "Gallardo", 1996, 80, 1.90, ["comer", "dormir", "dibujar"])
+// console.log(manuel);
+// console.log(manuel.calEdad(2023));
+console.log(manuel.printAll());
 console.log(manuel.calEdad(2023));
+console.log(manuel.calIMC(80,1.90));
 
 
 module.exports = {Person}
