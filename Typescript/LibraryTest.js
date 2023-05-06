@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Book_1 = require("./Book");
+var Library_1 = require("./Library");
+var newBook1 = new Book_1.Book("El libro de Hechizos", 546, "5656356-JU46464", "Andrea Daga", "Impedimenta");
+var newBook2 = new Book_1.Book("El Necronomicon", 200, "46474646-HU83773", "Abdul", "Humanitas");
+var newBook3 = new Book_1.Book("La Biblia de las Brujas", 345, "4747473-GH83838", "Janet", "Velka");
+var library = new Library_1.Library([newBook1, newBook2, newBook3], "Rondeña", "Luka");
+console.log(library);
+console.log(library.getAddress);
+console.log(library.getManager);
+console.log(library.getNumbersOfBooks);
+console.log(library.findByAuthor("Andrea Daga"));
+console.log(library.setAddress("Calle Redonda 6"));
+console.log(library.setManager("Locuelo"));
+console.log(library.toString());
