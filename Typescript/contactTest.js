@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var contacts_1 = require("./contacts");
+var Person_1 = require("./Person");
+var alba = new Person_1.Person("Alba", 26, "Calle Gran Via");
+var juan = new Person_1.Person("Juan", 23, "Calle Wollymolly");
+var carla = new Person_1.Person("Carla", 20, "Calle Pajaritos");
+var amigos = new contacts_1.Contacts();
+amigos.people = [alba, juan, carla];
+console.log(amigos.people);

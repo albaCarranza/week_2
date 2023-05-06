@@ -10,14 +10,15 @@ export class Person {
         this.address = address;
         }
         public printName(){
-            return this.name
+            return this.name;
         }
         public yearOfBirth(currentYear : Number){
-            return currentYear - this.age
-        }
-        public setAddress(address : string):void{  
+            return currentYear - this.age;
         }
         public getAddress(): String{
             return this.address;
         }
-    }
+        public setAddress(newAddress : string){  
+            return this.address = newAddress;
+        }
+}
