@@ -1,4 +1,4 @@
-
+    
     export class Vector {
     private elements: Array<number>
     public n: number
