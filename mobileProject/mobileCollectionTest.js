@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var mobile_1 = require("./mobile");
+var mobileCollection_1 = require("./mobileCollection");
+var phone1 = new mobile_1.Mobile("redmi note", "xiamoi", "10 pro", "azul", 300);
+var phone2 = new mobile_1.Mobile("galaxy", "samsung", "s22 pro", "metal", 1300);
+var phone3 = new mobile_1.Mobile("iPhone", "apple", "14 pro", "grafite", 2000);
+var phone4 = new mobile_1.Mobile("p50 duo", "honor", "ultra max", "purple", 200);
+var myMobiles = [phone1, phone2, phone3, phone4];
+var myCollection = new mobileCollection_1.MobileCollection(myMobiles);
