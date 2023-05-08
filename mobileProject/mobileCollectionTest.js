@@ -8,3 +8,5 @@ var phone3 = new mobile_1.Mobile("iPhone", "apple", "14 pro", "grafite", 2000);
 var phone4 = new mobile_1.Mobile("p50 duo", "honor", "ultra max", "purple", 200);
 var myMobiles = [phone1, phone2, phone3, phone4];
 var myCollection = new mobileCollection_1.MobileCollection(myMobiles);
+console.log('---Total de todos los mobiles---');
+console.log(myCollection.getTotalPrice());

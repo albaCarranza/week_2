@@ -4,6 +4,7 @@ exports.MobileCollection = void 0;
 var MobileCollection = /** @class */ (function () {
     function MobileCollection(mobiles) {
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
     MobileCollection.prototype.setMobiles = function (mobiles) {
         this.mobiles = mobiles;
@@ -16,6 +17,14 @@ var MobileCollection = /** @class */ (function () {
     };
     MobileCollection.prototype.getTotalPrice = function () {
         return this.totalPrice;
+    };
+    MobileCollection.prototype.totalPriceCalculation = function () {
+        var total = 0;
+        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
+            var mobile = _a[_i];
+            total = Number(total) + Number(mobile.getprice());
+        }
+        return total;
     };
     return MobileCollection;
 }());

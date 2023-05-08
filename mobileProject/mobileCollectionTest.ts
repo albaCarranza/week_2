@@ -9,3 +9,6 @@ let phone4 : Mobile = new Mobile("p50 duo", "honor", "ultra max", "purple", 200)
 let myMobiles = [phone1, phone2, phone3, phone4];
 
 let myCollection : MobileCollection = new MobileCollection(myMobiles);
+
+console.log('---Total de todos los mobiles---')
+console.log(myCollection.getTotalPrice());
