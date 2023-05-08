@@ -1,16 +1,26 @@
 
 import { Vector } from "./Vector";
 
-let vector : Vector = new Vector(7, 17)
-let v3 = [3, 5, 3, 6, 3, 6, 9]
+// Declaro el vector origen
+let vectorOrigen : Vector = new Vector(10, 5);
 
-console.log(vector.print());
-console.log(vector.add(v3));
-console.log(vector.subs(v3));
-console.log(vector.mult(v3));
-console.log(vector.multNumb(8));
+console.log('----Imprime el vector----');
+vectorOrigen.print();
+
+// Declaro otro vector para las operaciones
+let vectorSecundario : Vector = new Vector(10, 5);
+console.log('----Imprime el secundario ----');
+vectorSecundario.print();
 
 
+console.log('----Imprime la suma ----');
+console.log(vectorOrigen.add(vectorSecundario.getElements()));
 
+console.log('----Imprime la resta ----');
+console.log(vectorOrigen.subs(vectorSecundario.getElements()));
 
+console.log('----Imprime la multiplicación ----');
+console.log(vectorOrigen.mult(vectorSecundario.getElements()));
 
+console.log('----Imprime el producto ----');
+console.log(vectorOrigen.multNumb(10));

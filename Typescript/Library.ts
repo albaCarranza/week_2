@@ -10,21 +10,27 @@ export class Library {
         this.address = address
         this.manager = manager
     }
+
     public getBooks(): Array<any> {
         return this.books
     }
+
     public getAddress(): String {
         return this.address
     }
+
     public getManager(): String {
         return this.manager
     }
-    public setAddress(newAddress: String): String {
-        return this.address = newAddress;
+
+    public setAddress(address: String): void {
+        this.address = address;
     }
-    public setManager(newManager: String): String {
-        return this.manager = newManager;
+
+    public setManager(manager: String): void {
+        this.manager = manager;
     }
+
     public toString(): String {
         let i: number = 0
         let x: string = ""
@@ -33,9 +39,11 @@ export class Library {
         }
         return x;
     }
+
     public getNumbersOfBooks(books: Number) {
         return this.books.length;
     }
+    
     public findByAuthor(author: String): Book[] {
         let librosAutor: Book[] = [];
         for (let i = 0; i < this.books.length; i++) {

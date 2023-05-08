@@ -8,17 +8,21 @@ export class Person {
         this.name = name;
         this.age = age;
         this.address = address;
-        }
-        public printName(){
-            return this.name;
-        }
-        public yearOfBirth(currentYear : Number){
-            return currentYear - this.age;
-        }
-        public getAddress(): String{
-            return this.address;
-        }
-        public setAddress(newAddress : string){  
-            return this.address = newAddress;
-        }
+    }
+
+    public printName(){
+        console.log(this.name);
+    }
+
+    public yearOfBirth(currentYear: Number): Number{
+        return Number(currentYear) - Number(this.age); // Para que no cante el compilador de ts
+    }
+
+    public getAddress(): String{
+        return this.address;
+    }
+    
+    public setAddress(address : string){  
+        this.address = address;
+    }
 }
