@@ -78,17 +78,6 @@ console.log(manuel.calEdad(2023));
 // • Crear un método llamado printPersons que imprima cada uno de los atributos de cada
 // objeto Person.
 
-class Contacts {
-    constructor(){
-        //this.arrObject = ; Tengo que finalizar el constructor del obj
-    }
-    //metodos
-
-}
-
-
-
-
 
 
 
