@@ -61,7 +61,7 @@ isRainbow(colors);
 // almacenadas en un array.
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 
-function add(myWords) {
+export function add(myWords) {
     let total = 0
 
     for (let i = 0; i < myWords.length; i++) {

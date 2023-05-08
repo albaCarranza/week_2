@@ -88,7 +88,7 @@ continent('China')
 // - “El numero es impar”, si el numero introducido como parámetro de entrada es impar
 // 5. La cabecera de la función tendrá el siguiente aspecto: function isEven(number)
 
-function isEven(number) {
+export function isEven(number) {
     if (number % 2 == 0) {
         console.log("El numero es par");
     } else {

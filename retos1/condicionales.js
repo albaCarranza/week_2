@@ -1,6 +1,9 @@
+"use strict";
 // 1. Realizar una función que dada una fecha de nacimiento te devuelva el signo zodiacal.
 // 2. La fecha de nacimiento vendrá indicada por dos números: dia y mes.
 // La cabecera de la función tendrá el siguiente aspecto: function zodiac(day, month)
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 function zodiac(day, month) {
     if ((day >= 21 && month == 1) || (day <= 19 && month == 2)) {
         return "Acuario";
@@ -71,11 +74,12 @@ continent('China');
 // 5. La cabecera de la función tendrá el siguiente aspecto: function isEven(number)
 function isEven(number) {
     if (number % 2 == 0) {
-        console.log(("El numero es par"));
+        console.log("El numero es par");
     }
     else {
         console.log("El numero es impar");
     }
 }
+exports.isEven = isEven;
 console.log('---Resultado de is Even----');
 isEven(7);

@@ -1,6 +1,9 @@
+"use strict";
 // Realizar una función que imprima los números impares existentes hasta el número
 // indicado como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: function evenNumbers(num)
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 function evenNumbers(num) {
     for (var i = 0; i <= num; i++) {
         if ((i % 2) !== 0) {
@@ -59,6 +62,7 @@ function add(myWords) {
     }
     return total;
 }
+exports.add = add;
 var array = ["fewe", "fefg", "fergre"];
 console.log('---Suma longitud de palabras----');
 console.log(add(array));
