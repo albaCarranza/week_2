@@ -1,13 +1,16 @@
 let myLib = require("./person")
+
 class Contacts {
-    constructor(){
+    constructor() {
         this.arrPerson = []
-
-    }
-    printAll(){
-        return this.arrPerson
     }
 
-
+    printPersons() {
+        for(let element of this.arrPerson){
+            element.printAll();
+        };
+    }
 }
-module.exports = {Contacts}
+
+
+module.exports = { Contacts }

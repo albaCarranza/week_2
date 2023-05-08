@@ -4,12 +4,20 @@
 
 let myLib = require("./person")
 
-let Juan = new myLib.Person("Juan", "Gallardo", 1994, 70, 1.80, ["correr", "dormir", "dibujar"])
+let juan = new myLib.Person("Juan", "Gallardo", 1994, 70, 1.80, ["correr", "dormir", "dibujar"])
 
-manuel.printAll();
-console.log(Juan.calEdad(2023));
-console.log(Juan.calIMC(70,1.80));
-console.log(this.hobbies);
+// Imprimir todos los datos de Juan
+console.log('-----Todos los datos------')
+juan.printAll();
 
+// Edad de la persona
+console.log('-----Edad------')
+console.log(juan.calEdad(2023));
 
-// console.log(Juan);
+// IMC de la persona
+console.log('-----IMC------')
+console.log(juan.calIMC(70,1.80));
+
+// Iprime los hobbies de la persona
+console.log('-----Hobbies------')
+juan.printHobbies();
