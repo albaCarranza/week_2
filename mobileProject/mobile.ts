@@ -48,6 +48,14 @@ public setcolor(color: string): void {
 public setprice(price: number): void {
     this.price = price;
 }
+public toString(){
+    console.log("\n\n“The characteristics of the mobile name are:”\n");
+    console.log("Name: " + this.name);
+    console.log("Trademark: " + this.trademark);
+    console.log("Model: " + this.model);
+    console.log("Color: " + this.color);
+    console.log("Price: " + this.price);
+}
 
 
 }

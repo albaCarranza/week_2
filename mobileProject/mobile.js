@@ -42,6 +42,14 @@ var Mobile = /** @class */ (function () {
     Mobile.prototype.setprice = function (price) {
         this.price = price;
     };
+    Mobile.prototype.toString = function () {
+        console.log("\n\n“The characteristics of the mobile name are:”\n");
+        console.log("Name: " + this.name);
+        console.log("Trademark: " + this.trademark);
+        console.log("Model: " + this.model);
+        console.log("Color: " + this.color);
+        console.log("Price: " + this.price);
+    };
     return Mobile;
 }());
 exports.Mobile = Mobile;
