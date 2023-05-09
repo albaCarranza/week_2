@@ -31,11 +31,18 @@ export class Point{
     }
 
     distanceToOrigin():number{
-       return Math.sqrt(((this.x-0)^2) + ((this.y-0)^2));
+        const x = this.x - 0;
+        const y = this.y - 0;
+
+        return Math.sqrt(x * x + y * y);
     }
 
     calculateDistance(anotherPoint:Point):number {
-        return Math.sqrt(((this.x-anotherPoint.getX())^2) + ((this.y-anotherPoint.getY())^2));
+
+        const x = this.x - anotherPoint.x;
+        const y = this.y - anotherPoint.y;
+
+        return Math.sqrt(x * x + y * y);
     }
 
     calculateQuadrant(): number{
@@ -63,6 +70,21 @@ export class Point{
         }
 
         return resultado; 
+    }
+
+    calculateNearest(points : Point[]): number {
+        let min = 9999999999999999999;
+        let posicion = -1;
+        for (let i = 0; i < points.length; i++) {
+            let distancia = this.calculateDistance(points[i]);
+
+            if(distancia < min){
+                min = distancia;
+                posicion = i;
+            }   
+        }
+
+        return posicion;
     }
 }
 

@@ -23,10 +23,14 @@ var Point = /** @class */ (function () {
         console.log("(" + this.x + "," + this.y + ")");
     };
     Point.prototype.distanceToOrigin = function () {
-        return Math.sqrt(((this.x - 0) ^ 2) + ((this.y - 0) ^ 2));
+        var x = this.x - 0;
+        var y = this.y - 0;
+        return Math.sqrt(x * x + y * y);
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
-        return Math.sqrt(((this.x - anotherPoint.getX()) ^ 2) + ((this.y - anotherPoint.getY()) ^ 2));
+        var x = this.x - anotherPoint.x;
+        var y = this.y - anotherPoint.y;
+        return Math.sqrt(x * x + y * y);
     };
     Point.prototype.calculateQuadrant = function () {
         var resultado = -1;
@@ -46,6 +50,18 @@ var Point = /** @class */ (function () {
             resultado = 4;
         }
         return resultado;
+    };
+    Point.prototype.calculateNearest = function (points) {
+        var min = 9999999999999999999;
+        var posicion = -1;
+        for (var i = 0; i < points.length; i++) {
+            var distancia = this.calculateDistance(points[i]);
+            if (distancia < min) {
+                min = distancia;
+                posicion = i;
+            }
+        }
+        return posicion;
     };
     return Point;
 }());
