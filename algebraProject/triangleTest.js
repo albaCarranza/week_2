@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var triangle_1 = require("./triangle");
+var point_1 = require("./point");
+console.log("----Calcular lados de un triángulo------");
+var point1 = new point_1.Point(0, 0);
+var point2 = new point_1.Point(10, 20);
+var point3 = new point_1.Point(20, 0);
+var myTriangle = new triangle_1.Triangle(point1, point2, point3);
+console.log(myTriangle.calculateLengthSides());
