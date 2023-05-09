@@ -10,3 +10,5 @@ var myMobiles = [phone1, phone2, phone3, phone4];
 var myCollection = new mobileCollection_1.MobileCollection(myMobiles);
 console.log('---Total de todos los mobiles---');
 console.log(myCollection.getTotalPrice());
+console.log('---PrintCollection de todos los mobiles---');
+myCollection.printCollection();

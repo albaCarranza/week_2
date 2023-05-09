@@ -26,6 +26,17 @@ var MobileCollection = /** @class */ (function () {
         }
         return total;
     };
+    MobileCollection.prototype.printCollection = function () {
+        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
+            var mobile = _a[_i];
+            console.log("\n\n“The characteristics of the mobile " + mobile.getName() + " are:”\n");
+            console.log("Name: " + mobile.getName());
+            console.log("Trademark: " + mobile.getTrademark());
+            console.log("Model: " + mobile.getmodel());
+            console.log("Color: " + mobile.getcolor());
+            console.log("Price: " + mobile.getprice());
+        }
+    };
     return MobileCollection;
 }());
 exports.MobileCollection = MobileCollection;

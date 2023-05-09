@@ -32,4 +32,16 @@ export class MobileCollection {
         }
         return total;
     }
+
+
+    printCollection(){
+        for(let mobile of this.mobiles){
+            console.log("\n\n“The characteristics of the mobile "+ mobile.getName() +" are:”\n");
+            console.log("Name: " + mobile.getName());
+            console.log("Trademark: " + mobile.getTrademark());
+            console.log("Model: " + mobile.getmodel());
+            console.log("Color: " + mobile.getcolor());
+            console.log("Price: " + mobile.getprice());
+        }
+    }
 }
