@@ -37,6 +37,33 @@ export class Point{
     calculateDistance(anotherPoint:Point):number {
         return Math.sqrt(((this.x-anotherPoint.getX())^2) + ((this.y-anotherPoint.getY())^2));
     }
+
+    calculateQuadrant(): number{
+
+        let resultado = -1;
+
+        if(this.x == 0 || this.y == 0){
+            resultado = 0;
+        }
+
+        if(this.x > 0 && this.y > 0){
+            resultado = 1;
+        }
+
+        if(this.x < 0 && this.y > 0){
+            resultado = 2;
+        }
+
+        if(this.x < 0 && this.y < 0){
+            resultado = 3;
+        }
+
+        if(this.x > 0 && this.y < 0){
+            resultado = 4;
+        }
+
+        return resultado; 
+    }
 }
 
 

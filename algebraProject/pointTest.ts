@@ -17,3 +17,6 @@ console.log('Distancia al punto de origen: ' + myPoint.distanceToOrigin())
 
 let myPoint2 : Point = new Point(11, 5);
 console.log('Distancia de otro punto: ' + myPoint.calculateDistance(myPoint2))
+
+console.log("----Probando metodos de calcular cuadrante------")
+console.log("Está en el cuadrante número: " + myPoint.calculateQuadrant())

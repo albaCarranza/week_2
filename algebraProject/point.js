@@ -28,6 +28,25 @@ var Point = /** @class */ (function () {
     Point.prototype.calculateDistance = function (anotherPoint) {
         return Math.sqrt(((this.x - anotherPoint.getX()) ^ 2) + ((this.y - anotherPoint.getY()) ^ 2));
     };
+    Point.prototype.calculateQuadrant = function () {
+        var resultado = -1;
+        if (this.x == 0 || this.y == 0) {
+            resultado = 0;
+        }
+        if (this.x > 0 && this.y > 0) {
+            resultado = 1;
+        }
+        if (this.x < 0 && this.y > 0) {
+            resultado = 2;
+        }
+        if (this.x < 0 && this.y < 0) {
+            resultado = 3;
+        }
+        if (this.x > 0 && this.y < 0) {
+            resultado = 4;
+        }
+        return resultado;
+    };
     return Point;
 }());
 exports.Point = Point;
