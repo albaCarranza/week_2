@@ -10,3 +10,10 @@ console.log(myPoint.getX());
 
 myPoint.setY(25);
 console.log(myPoint.getY());
+
+
+console.log("----Probando metodos de Distancias------")
+console.log('Distancia al punto de origen: ' + myPoint.distanceToOrigin())
+
+let myPoint2 : Point = new Point(11, 5);
+console.log('Distancia de otro punto: ' + myPoint.calculateDistance(myPoint2))
